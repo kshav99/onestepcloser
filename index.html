@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneStepCloser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heart-container">
+        <div class="heart">
+            <div class="text">Hey there Pookie!</div>
+        </div>
+    </div>
+
+    <div class="question-section" id="question-section">
+        <h2>What would you like to share with Keshav?</h2>
+        <form id="share-form">
+            <label><input type="radio" name="contact" value="phone number"> Phone Number</label>
+            <label><input type="radio" name="contact" value="Snapchat ID"> Snapchat ID</label>
+            <label><input type="radio" name="contact" value="Instagram Handle"> Instagram Handle</label>
+            <div id="input-container" style="display: none;">
+                <input type="text" id="contact-detail" placeholder="Enter your contact detail">
+            </div>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <div id="success-message" style="display: none;">
+        <h2>Thank You!</h2>
+        <p>See you on the other side Chief.</p>
+    </div>
+
+    <div class="fireworks"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("UUxUCWkFJBKLGkOPf"); // Replace with your public API key
+</script>
+</body>
+</html>
