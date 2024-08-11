@@ -1,16 +1,18 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(145deg, #232526, #414345);
+    background: linear-gradient(145deg, #232526, #414345), url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     color: #ffffff;
-    overflow: auto;
+    overflow: auto; /* Allow scrolling */
+    height: auto; /* Adjust height for scrolling */
 }
 
 .heart-container {
@@ -175,8 +177,10 @@ button:hover {
 }
 
 #success-message h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    position: relative; /* Ensure proper layout */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #success-message p {
