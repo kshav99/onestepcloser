@@ -10,6 +10,7 @@ document.querySelectorAll('input[name="contact"]').forEach(radio => {
 function submitForm() {
     const contactType = document.querySelector('input[name="contact"]:checked').value;
     const contactDetail = document.getElementById('contact-detail').value;
+     document.querySelector('.text').style.display = 'none';
     
     if (contactDetail) {
         // Hide the form and show a success message
